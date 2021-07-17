@@ -147,7 +147,7 @@ void loop()
   uint8_t rotate = getRotate(&az); // 端末のローテーションを取得
   if (last_rotate != rotate){
     // 以前表示したときのローテーションと異なる場合
-    if( last_rotate == 0xff || az < 0.9 ){
+    if( last_rotate == 0xff || abs(az * 100) < 0.9 * 100 ){
       // 初めて表示する場合または端末が上方向に向いていない場合（上方向に向いている場合、ローテーションの向きが安定しないため）
       last_rotate = rotate;
       update = true; // 表示を更新に設定

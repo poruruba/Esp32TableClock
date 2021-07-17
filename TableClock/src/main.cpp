@@ -108,14 +108,14 @@ void setup()
 void loop()
 {
   /*
-  /* ①M5StickCの状態の更新
+   * ①M5StickCの状態の更新
   */
   M5.update(); // M5StickCの状態更新
 
   bool update = false; // 表示を更新するかどうかの初期値設定
 
   /*
-  /* ②ボタンが押されたかの処理
+   * ②ボタンが押されたかの処理
   */
   if( M5.BtnB.wasPressed()){
     // M5StickCのBtnBが押された場合
@@ -141,7 +141,7 @@ void loop()
   }
 
   /*
-  /* ③端末の向きの検出
+   * ③端末の向きの検出
   */
   float az;
   uint8_t rotate = getRotate(&az); // 端末のローテーションを取得
@@ -155,7 +155,7 @@ void loop()
   }
 
   /*
-  /* ④自動表示更新の必要性の確認
+   * ④自動表示更新の必要性の確認
   */
   int now = millis(); // 現在時間を取得
   if( !update ){
@@ -191,7 +191,7 @@ void loop()
   }
 
   /*
-  /* ⑤表示ビューの更新
+   * ⑤表示ビューの更新
   */
   if (current_view == VIEW_TIME){
     // 現在時刻ビューの場合
@@ -224,7 +224,7 @@ void loop()
   }
 
   /*
-  /* ⑥少しウエイト
+   * ⑥少しウエイト
   */
   delay(1);
 }

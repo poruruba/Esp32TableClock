@@ -9,7 +9,7 @@
 
 const char *wifi_ssid = "【WiFiアクセスポイントのSSID】"; // WiFiアクセスポイントのSSID
 const char *wifi_password = "【WiFiアクセスポイントのパスワード】"; // WiFiアクセスポイントのパスワード
-const char *weather_appid = "【OpenWeatherMapのAPPID】"; // OpenWeatherMapのAPPID
+const char *weather_appid = "【OpenWeatherMapのKey】"; // OpenWeatherMapのKey
 const char *weather_location = "【OpenWeatherMapの取得ロケーション名】"; // OpenWeatherMapの取得ロケーション名
 
 #define GPIO_LED 10 // LEDのPIN番号
